@@ -1,2 +1,2 @@
 # NewTest
-test repository
+Тестовый репозиторий
