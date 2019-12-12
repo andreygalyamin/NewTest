@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="RU-ru">
+
+<head>
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link href="css/solid.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/game_script.js"></script>
+  <title>Game!</title>
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i>Главная</a></li>
+        <li><a href="#"><i class="fas fa-images"></i>Галерея</a>
+          <ul>
+            <li><a href="norway.html">Norway</a></li>
+            <li><a href="iceland.html">Iceland</a></li>
+          </ul>
+        </li>
+        <li><a href="order.html"><i class="fas fa-th-list"></i>Заявка</a></li>
+        <li><a href="game.html"><i class="fas fa-gamepad"></i>Тренажер</a></li>
+        <li><a href="about.html"><i class="fas fa-user-friends"></i>О нас</a></li>
+      </ul>
+    </nav>
+  </header>
+  <p></p>
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-50">
+            <label for="iter"><i class="fa fa-dice"></i> Введите количество итераций:</label>
+            <input type="text" id="iter" name="iter" placeholder="10">
+            <input class="btn" id="btnStart" type="button" onclick="training()" value="Запустить Тренажер">
+            <label for="ansTrue"><i class="fa fa-thumbs-up"></i> Правильных ответов:</label>
+            <output id="ansTrue"></output>
+            <label for="ansFalse"><i class="fa fa-thumbs-down"></i> Неправильных ответов:</label>
+            <output id="ansFalse"></output>
+            <label for="res"><i class="fa fa-th-list"></i> Ваши неправильные ответы:</label>
+            <div id="res"></div>
+<p></p>
+          <output id="winner" style="display: none; color: forestgreen;"><i class="fa fa-trophy"></i> Congrats, you are winner!</output>
+          <output id="loser" style="display: none; color: red;"><i class="fa fa-sad-tear"></i> Sorry, but you are loser!</output>
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>

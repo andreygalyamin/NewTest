@@ -1,0 +1,61 @@
+<!DOCTYPE html>  
+<meta charset="UTF-8">
+<html lang="RU-ru">
+
+<head>
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link href="css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>GoWithMe</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Главная</a></li>
+                <li><a href="#"><i class="fas fa-images"></i>Галерея</a>
+                <ul>
+                    <li><a href="norway.html">Norway</a></li>
+                    <li><a href="iceland.html">Iceland</a></li>
+                </ul></li>
+                <li><a href="order.html"><i class="fas fa-th-list"></i>Заявка</a></li>
+                <li><a href="game.html"><i class="fas fa-gamepad"></i>Тренажер</a></li>
+                <li><a href="about.html"><i class="fas fa-user-friends"></i>О нас</a></li>
+            </ul>             
+        </nav>
+    </header>
+<p>Привет, это мое тестовое задание.</p>
+<p>ASmirnova 2019.</p>
+
+    <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1/3</div>
+                <img src="img/norvegiya_doma_more_yakhty_gory_105138_1600x900.jpg" style="width: 100%;"  alt="">
+                <div class="text">Norway</div>
+            </div>
+            <div class="mySlides fade">
+                    <div class="numbertext">2/3</div>
+                    <img src="img/islandiya_gora_skala_domiki_svet_lug_48273_1600x900.jpg" style="width: 100%;"  alt="" >
+                    <div class="text">Iceland</div>
+                </div>
+                <div class="mySlides fade">
+                        <div class="numbertext">3/3</div>
+                        <img src="img/islandiia-tupik-ptitsa-trava-priroda-boke.jpg" style="width: 100%;" alt="" >
+                        <div class="text">Iceland</div>
+                    </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next"onclick="plusSlides(1)">&#10095</a>
+    </div>
+    
+    <div id="dots" style="text-align: center;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

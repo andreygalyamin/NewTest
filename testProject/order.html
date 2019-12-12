@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="RU-ru">
+
+<head>
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link href="css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/form_script.js"></script>
+    <title>GoWithMe</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Главная</a></li>
+                <li><a href="#"><i class="fas fa-images"></i>Галерея</a>
+                    <ul>
+                        <li><a href="norway.html">Norway</a></li>
+                        <li><a href="iceland.html">Iceland</a></li>
+                    </ul>
+                </li>
+                <li><a href="order.html"><i class="fas fa-th-list"></i>Заявка</a></li>
+                <li><a href="game.html"><i class="fas fa-gamepad"></i>Тренажер</a></li>
+                <li><a href="about.html"><i class="fas fa-user-friends"></i>О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p></p>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Заполните форму, чтобы мы могли связаться с вами</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Фамилия, Имя</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Василий Иванов">
+                        <label for="state">Пол</label>
+                        <input class="state" name="state" type="radio" value="female"> Женский
+                        <input class="state" name="state" type="radio" value="male"> Мужской<p></p>
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="vasya@example.com">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Телефон</label>
+                        <input type="text" id="tel" name="tel" placeholder="(***) *** ** **">
+                        <label for="city"><i class="fa fa-institution"></i> С какого вы города?</label>
+                        <div class="custom-select" id="scity" name="city">
+                            <select id="city">
+                                <option value="0">Выберите город:</option>
+                                <option value="1">Донецк</option>
+                                <option value="2">Мариуполь</option>
+                                <option value="3" selected="selected">Авдеевка</option>
+                                <option value="4">Киев</option>
+                                <option value="5">Львов</option>
+                                <option value="6">Днепр</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="day">Удобное время для звонка</label>
+                                <div class="custom-select" id="sday" name="day">
+                                    <select id="day">
+                                        <option value="0">Понедельник</option>
+                                        <option value="1">Вторник</option>
+                                        <option value="2">Среда</option>
+                                        <option value="2">Четверг</option>
+                                        <option value="2">Пятница</option>
+                                        <option value="2">Субота</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <label for="time">(необязательно)</label>
+                                <input type="text" id="time" name="time" placeholder="ЧЧ:ММ">
+                            </div>
+                        </div>
+                        <label for="destination">Куда едем?</label>
+                        <div class="custom-select" id="sdestination" name="destination">
+                            <select id="destination">
+                                <option value="0">Выберите страну:</option>
+                                <option value="1">Норвегия</option>
+                                <option value="2">Исландия</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="date">Когда? Период с:</label>
+                                <input class="custom-date" type="date" id="start" name="trip-start" min="2020-01-01"
+                                    max="2020-12-31">
+                            </div>
+                            <div class="col-50">
+                                <label for="по">по:</label>
+                                <input class="custom-date" type="date" id="end" name="trip-end" min="2020-01-01"
+                                    max="2020-12-31">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                    <input type="checkbox" id="check" name="sameadr"> Я согласен с Условиями использования и
+                    Политикой конфиденциальности.
+                </label>
+                <input type="submit" id="btnSend" value="Подать заявку" class="btn" type="button">
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Уважаем<output id="o-head"></output> <output id="o-name"></output>... проверим данные...</p>
+                        <p>Вы собираетесь посетить такую страну как <output id="o-destination"></output> в период с <output id="o-start"></output>
+                        по <output id="o-end"></output>. Связаться с вами можно по тел. <output id="o-tel"></output> или по почте
+                        <output id="o-email"></output>. В <output id="o-day"></output> мы вам позвоним.
+                    </p>
+                    <br>
+                    <p>Приятного путешествия! :)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
